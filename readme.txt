@@ -16,8 +16,8 @@ A one-click discounted add-on offer at checkout -- the price charged is always t
 
 HDWebmobile Order Bump shows one extra product at a discount on the cart page. A shopper clicks a single link to add it -- no form, no quantity field, nothing to submit -- and the discounted price is computed by the server at that moment from the product's own regular price and your configured discount percentage.
 
-= Why this plugin exists =
-Several competing "order bump" and "one-click upsell" plugins have computed the bumped item's discounted price on the checkout page and then read that price back from a hidden form field when the order was placed (CWE-20, Improper Input Validation). A shopper who edited that field, or simply replayed the request with a different value, could add the bump item at almost any price of their choosing.
+= Security by design =
+A common weakness in order-bump and one-click-upsell tools is computing the bumped item's discounted price on the checkout page and then reading that price back from a hidden form field when the order is placed (CWE-20, Improper Input Validation). A shopper who edits that field, or simply replays the request with a different value, could add the bump item at almost any price of their choosing.
 
 This plugin has no such field to tamper with in the first place:
 
