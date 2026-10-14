@@ -34,6 +34,9 @@ This plugin has no such field to tamper with in the first place:
 * One offer at a time, shown on the cart page (not per-product upsells, and not a checkout-page field)
 * No A/B testing or conversion analytics in this version
 
+= Enjoying this plugin? =
+If it helps your site, please consider [leaving an honest review on WordPress.org](https://wordpress.org/support/plugin/hdwebmobile-order-bump/reviews/#new-post) -- it helps other WordPress users find it. Found a problem or have an idea? Please [open a support topic](https://wordpress.org/support/plugin/hdwebmobile-order-bump/) first so it can be fixed.
+
 == Installation ==
 
 1. Upload the plugin files to the `/wp-content/plugins/hdwebmobile-order-bump` directory, or install the plugin through the WordPress plugins screen directly.
