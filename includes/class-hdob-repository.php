@@ -10,11 +10,10 @@ if (!defined('ABSPATH')) {
  * A single store-wide order-bump offer, and the only place its discounted price is ever
  * computed.
  *
- * Several competing "order bump" / "one-click upsell" plugins have read the bumped item's
- * discounted price straight out of a hidden field the checkout page itself rendered and
- * submitted back -- so a shopper who edited that field before submitting (or simply replayed
- * the request with a different value) could add the bump item at almost any price they chose
- * (CWE-20, Improper Input Validation, leading to price manipulation).
+ * The risk this guards against: reading the bumped item's discounted price from a hidden field
+ * the checkout page rendered and submitted back -- a shopper who edited that field (or
+ * replayed the request with a different value) could add the bump item at almost any price
+ * they chose (CWE-20, Improper Input Validation, leading to price manipulation).
  *
  * This plugin never has that field to tamper with in the first place: get_discounted_price()
  * is the ONLY place a bump price is computed, it takes no price-shaped argument at all, and it

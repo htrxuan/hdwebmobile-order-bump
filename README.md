@@ -12,7 +12,7 @@ Shows one extra product at a discount on the cart page. A shopper clicks a singl
 
 ## Why this plugin exists
 
-Several competing "order bump" and "one-click upsell" plugins have computed the bumped item's discounted price on the checkout page and then read that price back from a hidden form field when the order was placed (CWE-20, Improper Input Validation). A shopper who edited that field, or simply replayed the request with a different value, could add the bump item at almost any price of their choosing.
+A common flaw in order-bump and one-click-upsell plugins: computing the bumped item's discounted price on the checkout page and then reading that price back from a hidden form field when the order is placed (CWE-20, Improper Input Validation). A shopper who edited that field, or replayed the request with a different value, could add the bump item at a price of their choosing.
 
 This plugin has no such field to tamper with in the first place:
 
